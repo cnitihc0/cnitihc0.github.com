@@ -1,0 +1,81 @@
+<div id="header">
+    <div class="main-top">
+        <a class="avatar" href="/index.html">
+            <img src="/assets/themes/darwin/images/e504c85fb1dc.png" alt="240">
+        </a>
+        <div class="title">
+            <a class="name" href="/u/90ab66c248e6">马少波</a>
+            <i class="iconfont ic-man"></i>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    <div class="meta-block">
+                        <a href="/users/90ab66c248e6/following">
+                            GitHub <i class="iconfont ic-arrow"></i>
+                        </a>        </div>
+                </li>
+                <li>
+                    <div class="meta-block">
+                        <a href="/users/90ab66c248e6/followers">
+                            CSDN <i class="iconfont ic-arrow"></i>
+                        </a>        </div>
+                </li>
+                <li>
+                    <div class="meta-block">
+                        <a href="/users/90ab66c248e6/followers">
+                            QQ <i class="iconfont ic-arrow"></i>
+                        </a>        </div>
+                </li>
+                <li>
+                    <div class="meta-block">
+                        <a href="/users/90ab66c248e6/followers">
+                            WeChat <i class="iconfont ic-arrow"></i>
+                        </a></div>
+                </li>
+            </ul>
+            <div style="margin-bottom: 10px;line-height: 20px;font-size: 14px;color: #666;">个人介绍:知识的搬运工</div>
+        </div>
+    </div>
+    <a href="javascript:openMenu();" onmouseover="rollOver(this);" onmouseout="rollOut(this);"><img
+            src="/assets/themes/darwin/images/b_allposts_off.png" border="0" alt="按CTRL" id="b_allposts"
+            style="opacity: 1;"></a>
+    <div class="adbox" style="text-align: center;">
+        <img src="/assets/themes/darwin/images/bg_ads_top.png" border="0" alt="标题行">
+        <div style="padding-top: 15px;"><font><font>查看我们的</font></font><br><font><font>其他项目</font></font></div>
+
+
+        <script content="text/javascript">
+            var adArray = new Array();
+            $(".ad").each(function (i) {
+                //store html
+                adArray.push($(this).html())
+
+                //delete html
+                $(this).remove();
+            });
+
+            //redraw
+            howManyItems = adArray.length;
+            for (i = 0; i < howManyItems; i++) {
+                //reorder html
+                randomNumber = Math.floor(Math.random() * adArray.length);
+
+                //reprint html
+                $(".adbox").append('<div class="ad">' + adArray[randomNumber] + '</div>');
+
+                //remove the item from array
+                adArray.splice(randomNumber, 1);
+            }
+
+        </script>
+        <div class="ad">
+            <div class="adOver"><a href="https://www.goodui.org/datastories" title="数据库"
+                                   onclick="recordOutboundLink('Ads','Datastories',this.href);return false;"><img
+                    src="/assets/themes/darwin/ads/ds_over.jpg" border="0"></a></div>
+            <div class="adStandard"><a href="https://www.goodui.org/datastories" title="数据库"
+                                       onclick="recordOutboundLink('Ads','Datastories',this.href);return false;"><img
+                    src="/assets/themes/darwin/ads/ds.jpg" border="0"></a></div>
+        </div>
+    </div>
+</div>

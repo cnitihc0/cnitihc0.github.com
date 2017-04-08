@@ -1,0 +1,27 @@
+<div id="menu" class="colorlinks" style="z-index: 1000000; opacity: 1; display: block;background-color: white;">
+    <div id="menuHolder">
+        <div class="menuArrow" id="arrowUp"><img src="/assets/themes/darwin/images/arrowUp.jpg"></div>
+        <br>
+        <div id="menuContent">
+            <ul>
+                {% for category in site.categories %}
+                <div class="tab-pane" id="{{ category[0] }}">
+                    <div class="list-group">
+                        {% for post in category[1] %}
+                        <li><a href="{{ post.url }}" rel="bookmark"
+                               title="{{post.title}}"><font><font>{{post.title}}</font></font></a>
+                        </li>
+                            {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+                <!--<li><a href="http://wireframes.linowski.ca/2016/08/betterui-videos/" rel="bookmark"-->
+                <!--title="阅读BetterUI视频的其余部分"><font><font>213123</font></font></a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <br>
+        <div class="menuArrow" id="arrowDown"><img src="/assets/themes/darwin/images/arrowDown.jpg"></div>
+
+    </div>
+</div>
