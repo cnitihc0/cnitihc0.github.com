@@ -1,23 +1,34 @@
+<script type="text/javascript">
+
+    function menu_url(id) {
+
+        var index = 1;
+        var lis = document.querySelectorAll('#menu_ul li');
+
+        for (var i in lis) {
+            if (lis[i].getAttribute('id') == id) {
+                if (index == 1) { window.location.href= '/';
+                } else { window.location.href= '/page' + index; }
+            }
+            index ++;
+        }
+    }
+</script>
+
 <div id="menu" class="colorlinks" style="z-index: 1000000; opacity: 1; display: block;background-color: white;">
     <div id="menuHolder">
         <div class="menuArrow" id="arrowUp"><img src="/assets/themes/darwin/images/arrowUp.jpg"></div>
         <br>
         <div id="menuContent">
-            <ul>
-                {% for category in site.categories %}
-                <div class="tab-pane" id="{{ category[0] }}">
-                    <div class="list-group">
-                        {% for post in category[1] %}
-                        <li><a href="{{ post.url }}" rel="bookmark"
-                               title="{{post.title}}"><font><font>{{post.title}}</font></font></a>
-                        </li>
-                            {% endfor %}
-                    </div>
-                </div>
+            <ul id="menu_ul">
+                {% for post in site.posts %}
+                    <li id="{{post.id}}">
+                        <a href="javascript:menu_url('{{post.id}}')" rel="bookmark"
+                           title="{{post.title}}"><font><font>{{post.title}}</font></font>
+                        </a>
+                    </li>
                 {% endfor %}
-                <!--<li><a href="http://wireframes.linowski.ca/2016/08/betterui-videos/" rel="bookmark"-->
-                <!--title="阅读BetterUI视频的其余部分"><font><font>213123</font></font></a>-->
-                <!--</li>-->
+
             </ul>
         </div>
         <br>

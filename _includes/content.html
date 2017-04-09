@@ -6,15 +6,12 @@
 
         {% for post in paginator.posts %}
         <span class="date">{{ post.date }}</span>
-        <!--</p>-->
-        <div class="content">
-            {{ post.content }}
-        </div>
+        <div class="content">{{ post.content }}</div>
         {% endfor %}
 
         {% if paginator.page %}
         {% else %}
-        {{content}}
+        {{ content }}
         {% endif %}
 
     </div>
