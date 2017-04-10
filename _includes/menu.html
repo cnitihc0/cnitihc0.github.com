@@ -25,11 +25,12 @@
         <div id="menuContent">
             <ul id="menu_ul">
                 {% for post in site.posts %}
-                <li id="{{post.id}}">
-                    <a href="javascript:menu_url('{{ site.baseurl}}', '{{post.id}}')" rel="bookmark"
+                <li id="{{post[0].id}}">
+                    <a href="{{post.url}}" rel="bookmark"
                        title="{{post.title}}"><font><font>{{post.title}}</font></font>
                     </a>
                 </li>
+
                 {% endfor %}
             </ul>
         </div>
