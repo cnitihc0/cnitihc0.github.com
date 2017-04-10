@@ -136,4 +136,4 @@ JB :
   
 paginate: 1
 paginate_path: "page:num"
-baseurl: https://cnitihc0.github.io/
+baseurl: /cnitihc0.github.io
