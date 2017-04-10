@@ -4,13 +4,16 @@
 
         var index = 1;
         var lis = document.querySelectorAll('#menu_ul li');
-
         for (var i in lis) {
             if (lis[i].getAttribute('id') == id) {
-                if (index == 1) { window.location.href= baseUrl;
-                } else { window.location.href= baseUrl + 'page' + index; }
+                if (index == 1) {
+                    window.location.href = "/";
+                } else {
+                    window.location.href = '/page' + index;
+                }
+                break;
             }
-            index ++;
+            index++;
         }
     }
 </script>
@@ -22,11 +25,11 @@
         <div id="menuContent">
             <ul id="menu_ul">
                 {% for post in site.posts %}
-                    <li id="{{post.id}}">
-                        <a href="javascript:menu_url('{{ site.baseurl}}', '{{post.id}}')" rel="bookmark"
-                           title="{{post.title}}"><font><font>{{post.title}}</font></font>
-                        </a>
-                    </li>
+                <li id="{{post.id}}">
+                    <a href="javascript:menu_url('{{ site.baseurl}}', '{{post.id}}')" rel="bookmark"
+                       title="{{post.title}}"><font><font>{{post.title}}</font></font>
+                    </a>
+                </li>
                 {% endfor %}
 
             </ul>

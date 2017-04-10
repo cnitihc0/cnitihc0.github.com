@@ -19,7 +19,7 @@
         {% elsif page == 1 %}
             <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
         {% else %}
-            <a href="/{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            <a href="/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
         {% endif %}
     {% endfor %}
 
@@ -29,7 +29,7 @@
         <!--»</font></font>-->
     <!--</div>-->
     <div class="alignright">
-        <a href="/page{{ paginator.next_page}}" rel="next"><font><font>Next</font></font></a><font><font>
+        <a href="/page{{ paginator.next_page}}" rel="next"><font><font></font></font></a><font><font>
         »</font></font>
     </div>
     {% endif %}
