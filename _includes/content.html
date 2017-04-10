@@ -2,12 +2,6 @@
     {% include header_bar.html %}
     <hr>
     <div id="content" class="narrowcolumn">
-        {% include navside.html %}
-
-        {% for post in paginator.posts %}
-        <span class="date">{{ post.date }}</span>
-        <div class="content">{{ post.content }}</div>
-        {% endfor %}
 
         {% if paginator.page %}
         {% else %}
