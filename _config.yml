@@ -136,4 +136,5 @@ JB :
   
 paginate: 1
 paginate_path: "page:num"
-baseurl: /_site
+destination: ./_site
+source: .
