@@ -1,5 +1,5 @@
 		@media screen and (min-width: 768px) {
-            .dropdown-menu {
+            #myModal .dropdown-menu {
 				position:relative;
                 float: none;
                 font-size: 20px;
@@ -7,7 +7,7 @@
                 margin: 0 15%;
             }
 
-			.cb-search-tool ul{
+            #myModal .cb-search-tool ul{
                  width: 70% ;
                  white-space:nowrap;
                  overflow:hidden;
@@ -15,7 +15,7 @@
              }
 
 
-            .cb-search-content {
+            #myModal .cb-search-content {
                 width: 70%;
                 margin: 0 15%;
                 position: absolute;
@@ -31,21 +31,21 @@
         }
 
         @media screen and (max-width: 767px) {
-            .dropdown-menu {
+            #myModal .dropdown-menu {
 				position:relative;
                 float: none;
                 font-size: 20px;
                 width: 96%;
                 margin: 0 2%;
             }
-			.cb-search-tool ul{
+            #myModal .cb-search-tool ul{
 				width: 96% ;
-				white-space:nowrap; 
-				overflow:hidden; 
+				white-space:nowrap;
+				overflow:hidden;
 				text-overflow: ellipsis;
 			}
 
-            .cb-search-content {
+            #myModal .cb-search-content {
                 width: 96%;
                 margin: 0 2%;
                 position: absolute;
