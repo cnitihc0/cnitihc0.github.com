@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; /* Resets 1em to 10px */
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+    background: white;
+    color: #444;
+    text-align: center;
+}
+
+a {
+    color: #e67e22;
+    outline: none;
+}
+
+#content {
+    background-color: #eee;
+    margin: auto;
+    text-align:center;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+#page {
+    width: 760px;
+    border:none;
+    text-align: left;
+    margin: 0px auto 20px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+}
+
+#header.single {			/* So the header is in line with the next on single page view */
+    width: 510px;
+    margin: 0 auto;
+}
+
+#content {
+    font-size: 1.2em;
+}
+
+#content ul {
+    padding: 0 0 0 35px;
+    list-style: disc;
+    margin: 0px;
+}
+#content ul li {
+    padding: 0px;
+    text-indent: 0px;
+    padding-bottom: 5px;
+}
+
+.widecolumn .entry p {
+    font-size: 13px;
+}
+
+.narrowcolumn .entry, .widecolumn .entry, .entry {
+    line-height: 1.8em;
+    font-size: 13px;
+}
+
+.widecolumn {
+    line-height: 1.8em;
+}
+
+.narrowcolumn .postmetadata {
+    text-align: left;
+    font-size:90%;
+}
+
+
+#footer {
+    /*background: #464646;*/
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    clear: both;
+    color: #555;
+    border-top: 1px dashed #888;
+    background-color: #fcfcfc;
+}
+
+#footer p {
+    margin: 0;
+    padding: 20px 0 25px;
+    text-align: center;
+    background-color: #fcfcfc;
+}
+#footer p a, .colorlinks a {
+    color: #43aca5;
+}
+
+
+
+small {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+h1, h2, h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;/* font-family: Georgia, "Times New Roman", Times, serif;*/
+    font-weight: normal;
+}
+
+h1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 5em;
+    text-align: left;
+}
+
+#header .description {
+    font-size: 1.1em;
+    text-align:left;
+    margin-left: 3px;
+}
+
+#header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6em;
+    background-color: #ffffff;
+}
+
+h2.pagetitle {
+    font-size: 1.6em;
+}
+
+#sidebar h2 {
+    font-family: 'Lucida Grande', Verdana, Sans-Serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #3f3f3f;
+    background-color: #ffffff;
+}
+
+h1, h1 a, h1 a:visited, .description {
+    text-decoration: none;
+    color: #ccc;
+}
+
+h2, h2 a, h2 a:visited {
+    color: #666;
+}
+
+h2, h2 a, h2 a:hover, h2 a:visited, #sidebar h2, #wp-calendar caption, cite {
+    text-decoration: none;
+}
+
+
+p {
+    background-color: #ffffff;
+}
+/* End Structure */
+
+
+
+/*	Begin Headers */
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 0 0;
+}
+
+h2.pagetitle {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 2em;
+}
+
+#sidebar h2 {
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+h3 {
+    padding: 0;
+    margin: 30px 0 0;
+}
+
+h3.comments {
+    padding: 0;
+    margin: 40px auto 20px ;
+}
+
+img {
+
+}
+
+p img {
+    padding: 0;
+    max-width: 100%;
+}
+
+html>body .entry ul {
+    margin-left: 0px;
+    padding: 0 0 0 20px;
+    list-style: none;
+    padding-left: 10px;
+    text-indent: -10px;
+}
+
+html>body .entry li {
+    margin: 3px 0 4px 10px;
+}
+
+@media screen and (max-width : 1240px) {
+    #menu {
+        visibility: hidden;
+    }
+    #b_allposts {
+        visibility: hidden;
+    }
+
+}
+
+
+
+
+@media only screen and (max-device-width: 480px), handheld, only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .adbox
+    {
+        display: none;
+    }
+    #b_allposts {
+        display: none !important;
+    }
+    .widecolumn .entry p {
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+    .narrowcolumn .entry, .widecolumn .entry, .entry, h2 {
+        /*font-size: 1.8em;*/
+        /*line-height: 2em;*/
+    }
+
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 966px) {
+    .adbox
+    {
+        display: none;
+    }
+    #b_allposts {
+        display: none !important;
+    }
+
+    .widecolumn .entry p {
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+    .narrowcolumn .entry, .widecolumn .entry, .entry, h2 {
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+
+}
+
+.main-header {
+    text-align: center;
+    padding: 42px 0;
+    background: #ffffff;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.menu li.nav-current {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: -2px;
+}
+
+/*文章*/
+.post {
+    padding: 35px;
+    background: #ffffff;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.post .post-head .post-title a {
+    color: #303030;
+}
+
+.post .post-head .post-meta {
+    color: #959595;
+    margin: 14px 0 0px;
+}
+
+.post-content p {
+    margin-top: 0;
+    margin-bottom: 1.46em;
+}
+
+.post .post-content {
+    margin: 30px 0;
+}
+
+.post-content {
+    font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    color: #444443;
+}
+
+.post .featured-media img {
+    width: 100%;
+}
+
+.btn-default {
+    border: 1px solid #e67e22;
+    background: #e67e22;
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn {
+    padding: 7px 14px;
+    border-radius: 2px;
+    margin: 5px 20px;
+}
+
+.sidebar .widget {
+    background: #ffffff;
+    padding: 21px 30px;
+}
+
+.widget {
+    margin-bottom: 35px;
+}
+
+.widget .title {
+    margin-top: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 21px;
+    position: relative;
+}
+
+.widget .tag-cloud a {
+    border: 1px solid #ebebeb;
+    padding: 2px 7px;
+    color: #959595;
+    line-height: 1.5em;
+    display: inline-block;
+    margin: 0 7px 7px 0;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+/*顶部*/
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+.nav .open {
+
+}

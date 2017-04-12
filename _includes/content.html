@@ -1,13 +1,58 @@
-<div id="page">
-    {% include header_bar.html %}
-    <hr>
-    <div id="content" class="narrowcolumn">
+<section class="content-wrap" style="margin-top: 50px;">
+    <div class="container">
+        <div class="row">
 
-        {% if paginator.page %}
-        {% else %}
-        {{ content }}
-        {% endif %}
+            <main class="col-md-8 main-content">
 
+                {% for post in paginator.posts %}
+                <article id="{{posts.id}}" class="post">
+
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h1>
+                        <div class="post-meta">
+                            <span class="author">时间：</span>
+                            <time class="post-date" datetime="{{ post.date }}" title="{{ post.date }}">{{ post.date }}</time>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>{{post.excerpt}}</p>
+                    </div>
+                    <div class="post-permalink">
+                        <a href="{{post.url}}" class="btn btn-default">阅读全文</a>
+                    </div>
+
+                    <footer class="post-footer clearfix">
+                        <div class="pull-left tag-list">
+                            <i class="fa fa-folder-open-o"></i>
+
+                        </div>
+                        <div class="pull-right share">
+                        </div>
+                    </footer>
+                </article>
+                {% endfor %}
+
+                {% if paginator.page %}
+                {% include navside.html%}
+                {% else %}
+                {{ content }}
+                {% endif %}
+            </main>
+
+            <aside class="col-md-4 sidebar">
+
+                <div class="widget">
+                    <h4 class="title">标签</h4>
+                    <div class="content tag-cloud">
+
+                        {% for tag in site.tags %}
+                        <a href="#">{{tag[0]}}</a>
+                        {% endfor %}
+                        <a href="#">...</a>
+                    </div>
+                </div>
+                </aside>
+
+        </div>
     </div>
-    {% include sidebar.html %}
-</div>
+</section>

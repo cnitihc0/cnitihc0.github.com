@@ -134,5 +134,6 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
-#paginate: 1
-#paginate_path: "page:num"
+paginate: 5
+paginate_path: "page:num"
+#paginatepath: ['topics/study/page/:num','topics/life/page/:num']
