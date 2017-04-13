@@ -16,15 +16,21 @@
     <title>Mac</title>
     <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="screen">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- 包括所有已编译的插件 -->
+    <link rel="stylesheet" href="/assets/css/cooker.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/drawer.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/docs.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css">
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/iscroll.js"></script>
+    <script src="/assets/js/jquery.drawer.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/cb-search.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#right_header">
 <div>
+    <div class="drawer drawer-right">
     {% include navTop.html %}
-
+</div>
     <div id="content">
         <div class="container">
         {% include content.html param=include.param %}

@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+#permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
@@ -27,7 +27,7 @@ author :
 #
 production_url : https://cnitihc0.github.io
 
-gems: ["jekyll-sitemap","jekyll-paginate", "jekyll-paginate-category"]
+gems: ["jekyll-sitemap","jekyll-paginate"]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -134,10 +134,10 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
-paginate: 2
+paginate: 20
 paginate_path: "page:num"
 
-category_dir: "categories"
-category_layout: "categoriesindex.html"
-tag_dir: "tag"
-tag_layout: "tagindex.html"
+#category_dir: "categories"
+#category_layout: "index.html"
+#tag_dir: "tag"
+#tag_layout: "tagindex.html"

@@ -8,9 +8,30 @@ body {
     text-align: center;
 }
 
+/* Links
+   ========================================================================== */
+
 a {
     color: #e67e22;
     outline: none;
+    text-decoration:none;
+    background: transparent;
+}
+a:link{
+    outline: 0;
+    text-decoration:none; /* 指正常的未被访问过的链接*/
+}
+a:visited{
+    outline: 0;
+    text-decoration:none; /*指已经访问过的链接*/
+}
+a:hover{
+    outline: 0;
+    text-decoration:none;/*指鼠标在链接*/
+}
+a:active{
+    outline: 0;
+    text-decoration:none;/* 指正在点的链接*/
 }
 
 #content {
@@ -298,6 +319,11 @@ html>body .entry li {
     position: relative;
     overflow: hidden;
 }
+.post .post-footer {
+    margin-top: 30px;
+    border-top: 1px solid #ebebeb;
+    padding: 21px 0 0;
+}
 
 .post .post-head .post-title a {
     color: #303030;
@@ -325,7 +351,9 @@ html>body .entry li {
 .post .featured-media img {
     width: 100%;
 }
-
+.post .post-permalink {
+    text-align: left;
+}
 .btn-default {
     border: 1px solid #e67e22;
     background: #e67e22;
@@ -338,7 +366,7 @@ html>body .entry li {
 .btn {
     padding: 7px 14px;
     border-radius: 2px;
-    margin: 5px 20px;
+    /*margin: 5px 20px;*/
 }
 
 .sidebar .widget {
@@ -373,4 +401,73 @@ html>body .entry li {
 .navbar-inverse {
     background-color: #222;
     border-color: #080808;
+}
+
+.right_panel {
+    background-color: #1f1815;
+    background-attachment: scroll, fixed;
+    background-image: url(/assets/images/index/bg.jpg);
+    background-position: top right, top right;
+    background-repeat: no-repeat;
+    background-size: 300% auto;
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    padding: 6em 3em 3em 3em;
+}
+.right_panel strong {
+    color: #ffffff;
+    font-weight: 400;
+}
+.right_panel h1 {
+    font-size: 1.25em;
+}
+
+
+/* Icon */
+/*.icons {*/
+    /*cursor: default;*/
+    /*list-style: none;*/
+    /*padding-left: 0;*/
+    /*margin: 1em 0 0 0;*/
+    /*font-size: 1.5em;*/
+    /*color: rgba(255, 255, 255, 0.4);*/
+/*}*/
+/*.icons li {*/
+    /*display: inline-block;*/
+    /*padding: 0 1em 0 0;*/
+/*}*/
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.5em;
+}
+
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+#header strong, #header b {
+    color: #ffffff;
+}
+
+/*image*/
+.image img {
+    margin: 0 0 1em 0;
+    width: 6.25em;
+    border-radius: 100%;
 }

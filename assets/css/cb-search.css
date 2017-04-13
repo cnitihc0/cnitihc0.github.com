@@ -1,6 +1,6 @@
 		@media screen and (min-width: 768px) {
             #myModal .dropdown-menu {
-				position:relative;
+				position:absolute;
                 float: none;
                 font-size: 20px;
                 width: 70%;
@@ -32,7 +32,7 @@
 
         @media screen and (max-width: 767px) {
             #myModal .dropdown-menu {
-				position:relative;
+				/*position:relative;*/
                 float: none;
                 font-size: 20px;
                 width: 96%;
@@ -48,7 +48,7 @@
             #myModal .cb-search-content {
                 width: 96%;
                 margin: 0 2%;
-                position: absolute;
+                /*position: absolute;*/
                 top: 10%;
                 left: auto;
                 right: auto;
