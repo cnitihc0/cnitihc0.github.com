@@ -3,7 +3,7 @@ layout: post
 title: "Spring SpringBoot区别"
 description: ""
 category: programme
-tags: [spring, spring boot]
+tags: [spring, springboot]
 ---
 {% include JB/setup %}
 
