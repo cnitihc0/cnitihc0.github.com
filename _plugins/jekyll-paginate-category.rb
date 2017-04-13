@@ -1,5 +1,3 @@
-require "jekyll-paginate-category/version"
-
 module Jekyll
   module Paginate
     module Category
