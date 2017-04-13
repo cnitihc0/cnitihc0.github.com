@@ -1,5 +1,52 @@
+<script type="text/javascript">
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+
+    function openUrl(selfObject, paginate_path, name, currentPage) {
+        var type = getUrlParam('param');
+        paginate_path = paginate_path.replace(":num", currentPage);
+        var url = "";
+        if (currentPage == '1') {
+            url = "/" + name + "/" + type + "/?param=" + type;
+        } else {
+            url = "/" + name + "/" + type + "/" + paginate_path + "?param=" + type;
+        }
+        selfObject.href=url;
+    }
+
+</script>
+
+
 {% if paginator.total_pages > 1 %}
 <div class="navigation">
+
+    {% if include.param %}
+        {% if include.param == site.category_dir or include.param == site.tag_dir %}
+            <ul class="pagination">
+                {% if paginator.previous_page %}
+                <li><a href="javascript:void(0);" onclick="openUrl(this,'{{ site.paginate_path }}', '{{include.param}}','{{paginator.previous_page}}')">&laquo;</a></li>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li class="disabled"><a href="#">{{ page}}</a></li>
+                {% elsif page == 1 %}
+                <li><a href="javascript:void(0);" onclick="openUrl(this,'{{ site.paginate_path}}', '{{include.param}}','1')">{{ page }}</a></li>
+                {% else %}
+                <li><a href="javascript:void(0);" onclick="openUrl(this,'{{ site.paginate_path}}', '{{include.param}}','{{page }}')">{{ page }}</a></li>
+                {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <li><a href="javascript:void(0);" onclick="openUrl(this,'{{ site.paginate_path }}', '{{include.param}}','{{paginator.next_page}}')">&raquo;</a></li>
+                {% endif %}
+            </ul><br>
+
+        {% endif %}
+    {% else %}
 
     <ul class="pagination">
         {% if paginator.previous_page %}
@@ -19,8 +66,8 @@
         {% if paginator.next_page %}
         <li><a href="/page{{ paginator.next_page}}">&raquo;</a></li>
         {% endif %}
-
     </ul><br>
+    {% endif %}
 
 </div>
 {% endif %}

@@ -4,6 +4,10 @@
 
             <main class="col-md-8 main-content">
 
+                {% if page.paginator %}
+                {% assign paginator = page.paginator %}
+                {% endif %}
+
                 {% for post in paginator.posts %}
                 <article id="{{posts.id}}" class="post">
 
@@ -33,7 +37,7 @@
                 {% endfor %}
 
                 {% if paginator.page %}
-                {% include navside.html%}
+                {% include navside.html param=include.param %}
                 {% else %}
                 {{ content }}
                 {% endif %}
@@ -46,9 +50,9 @@
                     <div class="content tag-cloud">
 
                         {% for tag in site.tags %}
-                        <a href="#">{{tag[0]}}</a>
+                        <a href="/{{site.tag_dir}}/{{tag[0]}}/index.html?param={{tag[0]}}">{{tag[0]}}</a>
                         {% endfor %}
-                        <a href="#">...</a>
+                        <a href="javascript:void(0);">...</a>
                     </div>
                 </div>
                 </aside>
