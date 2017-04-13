@@ -291,6 +291,9 @@ html>body .entry li {
         font-size: 1.8em;
         line-height: 2em;
     }
+    .drawer-main {
+        width:50% !important;
+    }
 
 }
 
@@ -409,7 +412,7 @@ html>body .entry li {
     background-image: url(/assets/images/index/bg.jpg);
     background-position: top right, top right;
     background-repeat: no-repeat;
-    background-size: 300% auto;
+    background-size: 400% auto;
     color: rgba(255, 255, 255, 0.5);
     height: 100%;
     position: fixed;
@@ -470,4 +473,35 @@ html>body .entry li {
     margin: 0 0 1em 0;
     width: 6.25em;
     border-radius: 100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 768px) {
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }

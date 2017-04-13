@@ -39,7 +39,21 @@
                 {% if paginator.page %}
                 {% include navside.html param=include.param %}
                 {% else %}
-                {{ content }}
+                <article class="post">
+                    <header class="post-head">
+                        <h1 class="post-title">{{page.title}}</h1>
+                        <section class="post-meta">
+                            <time class="post-date" datetime="{{page.date}}" title="{{page.date}}">{{page.date}}</time>
+                        </section>
+                    </header>
+
+                    <section class="post-content">
+                        {{ content }}
+                    </section>
+                </article>
+
+
+
                 {% endif %}
             </main>
 
