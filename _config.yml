@@ -138,6 +138,6 @@ paginate: 2
 paginate_path: "page:num"
 
 category_dir: "categories"
-category_layout: "categoriesindex.html"
+category_layout: "index.html"
 tag_dir: "tag"
 tag_layout: "tagindex.html"
