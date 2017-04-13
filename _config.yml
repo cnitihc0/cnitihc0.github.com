@@ -27,7 +27,7 @@ author :
 #
 production_url : https://cnitihc0.github.io
 
-gems: ["jekyll-sitemap","jekyll-paginate"]
+gems: ["jekyll-sitemap","jekyll-paginate", "jekyll-paginate-category"]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
