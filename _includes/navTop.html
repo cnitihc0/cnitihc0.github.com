@@ -9,16 +9,6 @@
 <script src="/assets/js/bootstrap3-typeahead.min.js"></script>
 <script src="/assets/js/cb-search.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.drawer').drawer();
-        $('.js-trigger').click(function () {
-            $('.drawer').drawer("open");
-        });
-    });
-
-</script>
-
 <!-- 代码 开始 -->
 <div class="drawer-toggle drawer-hamberger"><span></span></div>
 <header id="right_header" class="drawer-main navbar-default right_panel">
@@ -50,7 +40,6 @@
 
         </div>
     </nav>
-
 </header>
 
 <header class="main-header"
@@ -66,3 +55,20 @@
 <div style="position: fixed; right: 16px; bottom: 20px;z-index: 99">
     <img data-toggle="modal" data-target="#myModal" src="/assets/images/search/6E7939783938.png" id="cb-search-btn" title="双击ctrl试一下" style="height: 38px;background-color: transparent; border-radius: 6px;">
 </div>
+
+<div id="back">
+    <ul><li><i class="icon-reply"></i></li></ul>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.drawer').drawer();
+        $('.js-trigger').click(function () {
+            $('.drawer').drawer("open");
+        });
+        $('#back ul').click(function () {
+            window.history.back();
+        });
+
+    });
+
+</script>

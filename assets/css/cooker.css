@@ -4344,8 +4344,8 @@ table th[class*="col-"] {
   font-style: normal;
   font-weight: normal;
 
-  src: url("../fonts/qcon-beta.eot");
-  src: url("../fonts/qcon-beta.eot?#iefix") format("embedded-opentype"), url("../fonts/qcon-beta.woff") format("woff"), url("../fonts/qcon-beta.ttf") format("truetype"), url("../fonts/qcon-beta.svg?#qcon") format("svg");
+  /*src: url("../fonts/qcon-beta.eot");*/
+  /*src: url("../fonts/qcon-beta.eot?#iefix") format("embedded-opentype"), url("../fonts/qcon-beta.woff") format("woff"), url("../fonts/qcon-beta.ttf") format("truetype"), url("../fonts/qcon-beta.svg?#qcon") format("svg");*/
 }
 .qcon {
   display: inline-block;

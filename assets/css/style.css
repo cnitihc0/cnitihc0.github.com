@@ -38,6 +38,8 @@ a:active{
     background-color: #eee;
     margin: auto;
     text-align:center;
+    font-size: 1.2em;
+    margin-top: 50px;
 }
 
 p {
@@ -61,10 +63,6 @@ p {
 #header.single {			/* So the header is in line with the next on single page view */
     width: 510px;
     margin: 0 auto;
-}
-
-#content {
-    font-size: 1.2em;
 }
 
 #content ul {
@@ -427,21 +425,6 @@ html>body .entry li {
     font-size: 1.25em;
 }
 
-
-/* Icon */
-/*.icons {*/
-    /*cursor: default;*/
-    /*list-style: none;*/
-    /*padding-left: 0;*/
-    /*margin: 1em 0 0 0;*/
-    /*font-size: 1.5em;*/
-    /*color: rgba(255, 255, 255, 0.4);*/
-/*}*/
-/*.icons li {*/
-    /*display: inline-block;*/
-    /*padding: 0 1em 0 0;*/
-/*}*/
-
 .icon {
     text-decoration: none;
     border-bottom: none;
@@ -481,27 +464,38 @@ html>body .entry li {
     margin-right: auto;
     margin-left: auto;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-@media screen and (min-width: 400px) and (max-width: 768px) {
-}
+
 
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#back {
+    position: fixed;
+    right: 16px;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+}
+#back ul{
+    list-style: none;
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: transparent;
+    border: 0;
+}
+#back .icon-reply {
+    font-size: 24px;
+    height: 38px;
+    background-color: transparent;
+    border-radius: 6px;
+    z-index: 99;
+    color: rgb(224, 219, 219);
 }

@@ -32,7 +32,7 @@
 
         @media screen and (max-width: 767px) {
             #myModal .dropdown-menu {
-				/*position:relative;*/
+				position:absolute;
                 float: none;
                 font-size: 20px;
                 width: 96%;
