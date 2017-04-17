@@ -272,28 +272,28 @@ html>body .entry li {
 
 }
 
-@media only screen and (min-device-width : 481px) and (max-device-width : 966px) {
-    .adbox
-    {
-        display: none;
-    }
-    #b_allposts {
-        display: none !important;
-    }
+/*@media only screen and (min-device-width : 481px) and (max-device-width : 966px) {*/
+    /*.adbox*/
+    /*{*/
+        /*display: none;*/
+    /*}*/
+    /*#b_allposts {*/
+        /*display: none !important;*/
+    /*}*/
 
-    .widecolumn .entry p {
-        font-size: 1.8em;
-        line-height: 2em;
-    }
-    .narrowcolumn .entry, .widecolumn .entry, .entry, h2 {
-        font-size: 1.8em;
-        line-height: 2em;
-    }
-    .drawer-main {
-        width:50% !important;
-    }
+    /*.widecolumn .entry p {*/
+        /*font-size: 1.8em;*/
+        /*line-height: 2em;*/
+    /*}*/
+    /*.narrowcolumn .entry, .widecolumn .entry, .entry, h2 {*/
+        /*font-size: 1.8em;*/
+        /*line-height: 2em;*/
+    /*}*/
+    /*.drawer-main {*/
+        /*width:50% !important;*/
+    /*}*/
 
-}
+/*}*/
 
 .main-header {
     text-align: center;

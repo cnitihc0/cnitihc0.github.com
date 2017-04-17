@@ -3,14 +3,15 @@
         width: 750px;
     }
     .drawer-main {
-        width: 60%;
+        width: 280px;
     }
     .drawer-right.drawer-open .drawer-overlay, .drawer-right.drawer-open .drawer-hamberger {
-        right: 60%;
+        right: 280px;
     }
     .drawer-right .drawer-main {
-        right: -60%;
+        right: -280px;
     }
+
 }
 @media (min-width: 992px) {
     .container {
