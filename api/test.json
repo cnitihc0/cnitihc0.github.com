@@ -1,4 +1,35 @@
 {
-  "s": "",
-  "a": 1
+  "code": "200",
+  "message": "",
+  "content":
+  [
+    {
+    "transportationName":"EMS",
+    "transportationId":"001",
+    "logisticstype":"1",
+    "weight":"1",
+    "price":1
+    },
+    {
+    "transportationName":"顺丰",
+    "transportationId":"002",
+    "logisticstype":"1",
+    "weight":"1",
+    "price":1
+    },
+    {
+    "transportationName":"圆通",
+    "transportationId":"003",
+    "logisticstype":"1",
+    "weight":"1",
+    "price":1
+    },
+    {
+    "transportationName":"天通",
+    "transportationId":"004",
+    "logisticstype":"1",
+    "weight":"1",
+    "price":1
+    }
+  ]
 }
